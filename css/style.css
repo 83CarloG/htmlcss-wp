@@ -10,14 +10,15 @@ body {
   background-size: cover;
 }
 
-/* Container */
+/* container */
 #container {
   width: 1200px;
   margin: 10px auto;
 
 }
+/* /container */
 
-/* Header */
+/* header */
 .header-top {
   height: 300px;
   position: relative;
@@ -25,7 +26,6 @@ body {
   background-image: url(../img/bg-logo.jpg);
   background-size: cover;
 }
-
 .container-logo {
   position: absolute;
   top: 50%;
@@ -35,7 +35,6 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
 .container-logo h1 {
   display: inline-block;
   font-size: 60px;
@@ -44,14 +43,13 @@ body {
   padding: 5px 10px;
 }
 
-/* Main-menu */
+/* main-menu */
 .main-menu {
   height: 60px;
   background-color: #504740;
   list-style: none;
   text-align: center;
 }
-
 .main-menu li:first-child {
   border: none;
 }
@@ -61,7 +59,6 @@ body {
   display: inline-block;
   border-left: 1px solid rgba(255,255,255,.1);
 }
-
 .main-menu li:hover {
   background-color: #332E29;
 }
@@ -73,24 +70,18 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* /Main main-menu */
+/* /main main-menu */
+/* /header */
 
-
-/* /Header */
-
+/* main */
 main {
-
-  /* il margin in % fa riferimento dalla larghezza (width) del contenitore
-  margin: 1% contenitore width 1000 margin=10px;;*/
   margin: 1% 0;
 }
-
 main::after {
   content: "";
   display: table;
   clear: both;
 }
-
 .col-left, .col-center, .col-right {
   float: left;
   border-radius: 5px;
@@ -103,11 +94,9 @@ main::after {
   padding: 2px;
   padding: 5px 5px;
 }
-
 #news-title {
   margin-bottom: 10px;
 }
-
 .news-title h2 {
   display: inline;
   margin-bottom: 10px;
@@ -120,16 +109,15 @@ main::after {
 }
 .news-list ul {
   list-style: none;
+  padding-left: 5px;
   color: green;
   font-size: 18px;
-  padding-left: 5px;
+  font-weight: bold;
 }
 .news-list  li.news-post {
   margin-bottom: 10px;
 }
 /* /col-left */
-
-
 /* col-center */
 .col-center {
   width: 50%;
@@ -140,7 +128,6 @@ main::after {
   margin: 20px 0;
   color: rgba(108, 122, 137, 1);
   text-shadow: 1px 1px rgba(0,0,0,.4);
-
 }
 .col-center p {
   line-height: 40px;
@@ -148,7 +135,7 @@ main::after {
 
 }
 /* /col-center */
-
+/* col right */
 .col-right {
   width: 20%;
   margin-left: 5%;
@@ -156,6 +143,7 @@ main::after {
 .widget{
   padding: 10px;
   margin-bottom: 5%;
+  border-radius: 5px;
   background-color: white;
 }
 .widget h2 {
@@ -163,15 +151,46 @@ main::after {
   color: rgba(108, 122, 137, 1);
   text-shadow: 1px 1px rgba(0,0,0,.4);
 }
-
 .widget p {
   line-height: 40px;
   text-align: justify;
-
-
-
 }
+/* /col right */
+/* /main */
+
+/* footer */
 footer {
-  height: 100px;
-  background-color: grey;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  color: lightgrey;
 }
+#credits {
+  border-bottom: 2px solid lightgrey;
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.links {
+  height: 120px;
+}
+
+.links::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.fa-facebook-square, .fa-instagram, .fa-github {
+  text-align: center;
+  display: inline-block;
+  width: 400px;
+  float:left;
+  font-size: 50px;
+  line-height: 120px;
+}
+
+
+/* /footer */
