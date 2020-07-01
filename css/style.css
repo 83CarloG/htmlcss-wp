@@ -94,25 +94,28 @@ main::after {
   padding: 2px;
   padding: 5px 5px;
 }
+
+#news-title h2 {
+  color: rgba(108, 122, 137, 1)
+}
+
 #news-title {
   margin-bottom: 10px;
-}
-.news-title h2 {
-  display: inline;
-  margin-bottom: 10px;
+  content: "";
+  display: table;
+  clear: both;
 }
 .fa-rss-square {
+  float:left;
   font-size: 30px;
   padding: 0px 5px;
   color: orange;
-  vertical-align: middle;
 }
 .news-list ul {
   list-style: none;
   padding-left: 5px;
   color: green;
   font-size: 18px;
-  font-weight: bold;
 }
 .news-list  li.news-post {
   margin-bottom: 10px;
@@ -149,7 +152,6 @@ main::after {
 .widget h2 {
   margin: 20px 0;
   color: rgba(108, 122, 137, 1);
-  text-shadow: 1px 1px rgba(0,0,0,.4);
 }
 .widget p {
   line-height: 40px;
@@ -191,6 +193,5 @@ footer {
   font-size: 50px;
   line-height: 120px;
 }
-
 
 /* /footer */
