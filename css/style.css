@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+h2 {
+  color: rgba(108, 122, 137, 1);
+}
+
 /* container */
 #container {
   width: 1200px;
@@ -43,6 +47,10 @@ body {
   padding: 5px 10px;
 }
 
+.container-logo h2 {
+  color:white;
+}
+
 /* main-menu */
 .main-menu {
   height: 60px;
@@ -54,16 +62,15 @@ body {
   border: none;
 }
 .main-menu li {
+  display: inline-block;
   padding: 0px 10px;
   font-size: 16px;
-  display: inline-block;
   border-left: 1px solid rgba(255,255,255,.1);
 }
 .main-menu li:hover {
   background-color: #332E29;
 }
 .main-menu a {
-  display: inline-block;
   line-height: 60px;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 1px 1px rgba(0,0,0,.4);
@@ -91,13 +98,9 @@ main::after {
   background-color: white;
   width: 20%;
   margin-right: 5%;
-  padding: 2px;
   padding: 5px 5px;
 }
 
-#news-title h2 {
-  color: rgba(108, 122, 137, 1)
-}
 
 #news-title {
   margin-bottom: 10px;
@@ -129,7 +132,6 @@ main::after {
 }
 .col-center h2 {
   margin: 20px 0;
-  color: rgba(108, 122, 137, 1);
   text-shadow: 1px 1px rgba(0,0,0,.4);
 }
 .col-center p {
@@ -149,9 +151,14 @@ main::after {
   border-radius: 5px;
   background-color: white;
 }
+
+.col-right .widget:last-child {
+  margin-bottom: 0;
+}
+
 .widget h2 {
   margin: 20px 0;
-  color: rgba(108, 122, 137, 1);
+
 }
 .widget p {
   line-height: 40px;
@@ -163,7 +170,6 @@ main::after {
 /* footer */
 footer {
   height: 150px;
-  margin-bottom: 20px;
   background-color: white;
   border-radius: 5px;
   color: lightgrey;
