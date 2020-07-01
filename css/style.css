@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(../img/pattern-bg.png);
+  background-size: cover;
+}
+
+/* Container */
+#container {
+  width: 1200px;
+  margin: 10px auto;
+
+}
+
+/* Header */
+.header-top {
+  height: 300px;
+  position: relative;
+  border: 10px solid #fff;
+  background-image: url(../img/bg-logo.jpg);
+  background-size: cover;
+}
+
+.container-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-logo h1 {
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 30px;
+  border: 5px solid #fff;
+  padding: 5px 10px;
+}
+
+/* Main-menu */
+.main-menu {
+  height: 60px;
+  background-color: #504740;
+  list-style: none;
+  text-align: center;
+}
+
+.main-menu li:first-child {
+  border: none;
+}
+.main-menu li {
+  padding: 0px 10px;
+  font-size: 20px;
+  display: inline-block;
+  border-left: 1px solid rgba(255,255,255,.1);
+}
+
+.main-menu li:hover {
+  background-color: #332E29;
+}
+.main-menu a {
+  display: inline-block;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px rgba(0,0,0,.4);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* /Main main-menu */
+
+
+/* /Header */
+
+main {
+
+  /* il margin in % fa riferimento dalla larghezza (width) del contenitore
+  margin: 1% contenitore width 1000 margin=10px;;*/
+  margin: 1% 0;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-left, .col-center, .col-right {
+  float: left;
+  border-radius: 5px;
+}
+/* col-left */
+.col-left {
+  background: white;
+  width: 20%;
+  margin-right: 5%;
+  padding: 2px;
+  padding: 5px 5px;
+}
+
+#news-title {
+  margin-bottom: 10px;
+}
+
+.news-title h2 {
+  display: inline;
+  font-size: 30px;
+}
+.fa-rss-square {
+  font-size: 30px;
+  padding: 0px 5px;
+  color: orange;
+  vertical-align: top;
+}
+.news-list ul {
+  list-style: none;
+  color: green;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.news-list  li.news-post {
+  margin-bottom: 10px;
+}
+/* /col-left */
+
+
+
+.col-center {
+  width: 50%;
+}
+.col-right {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.widget{
+  height: 150px;
+  margin-bottom: 5%;
+  background-color: lightgreen;
+}
+
+footer {
+  height: 100px;
+  background-color: grey;
+}
